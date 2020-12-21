@@ -19,6 +19,10 @@
     <modules>
         <module>eureka-server</module>
         <module>redis-service</module>
+        <module>eureka-client</module>
+        <module>eureka-server-rep</module>
+        <module>user-service</module>
+        <module>common-service</module>
     </modules>
 
     <properties>
@@ -134,6 +138,13 @@
                 <groupId>com.github.xiaoymin</groupId>
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
+            </dependency>
+
+            <!--集成logstash-->
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash-logback.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
