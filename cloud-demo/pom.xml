@@ -23,6 +23,7 @@
         <module>eureka-server-rep</module>
         <module>user-service</module>
         <module>common-service</module>
+        <module>ribbon-service</module>
     </modules>
 
     <properties>
@@ -139,7 +140,12 @@
                 <artifactId>knife4j-spring-boot-starter</artifactId>
                 <version>${knife4j.version}</version>
             </dependency>
-
+            <!--SpringData工具包-->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-commons</artifactId>
+                <version>${spring-data-commons.version}</version>
+            </dependency>
             <!--集成logstash-->
             <dependency>
                 <groupId>net.logstash.logback</groupId>
